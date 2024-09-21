@@ -4,3 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+tokio = { version = "1.40.0", features = ["full"] }
+axum  = { version = "0.7.6" }
+sqlx  = { version = "0.8", features = [ "runtime-tokio", "migrate", "sqlite" ] }
+
+[dev-dependecies]
+cucumber = { version = "0.21.1" }
+
+[[test]]
+name = "paiclone"
+harness = false
