@@ -6,7 +6,8 @@ edition = "2021"
 [dependencies]
 tokio = { version = "1.40.0", features = ["full"] }
 axum  = { version = "0.7.6" }
-sqlx  = { version = "0.8", features = [ "runtime-tokio", "migrate", "sqlite" ] }
+sqlx  = { version = "0.8.2", features = [ "runtime-tokio", "migrate", "sqlite" ] }
+tower = { version = "0.5.1", features = [ "util" ] }
 
 [dev-dependecies]
 cucumber = { version = "0.21.1" }
