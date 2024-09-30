@@ -7,6 +7,12 @@ use tower_http::{
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    tokio::try_join!(webserver())?;
+
+    Ok(())
+}
+
+async fn webserver() -> Result<()> {
     let app = Router::new()
         .route("/", get(home::index))
         .nest_service("/statics", ServeDir::new("statics"))
