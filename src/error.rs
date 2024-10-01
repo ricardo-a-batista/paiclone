@@ -9,4 +9,10 @@ pub enum Error {
 
     #[from]
     Template(tera::Error),
+
+    #[from]
+    Sqlx(sqlx::Error),
+
+    #[from]
+    Migrate(sqlx::migrate::MigrateError),
 }
