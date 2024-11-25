@@ -8,7 +8,7 @@ tokio       = { version = "1.41.0", features = ["full"] }
 axum        = { version = "0.7.7" }
 sqlx        = { version = "0.8.2", features = [ "runtime-tokio", "migrate", "sqlite" ] }
 tower       = { version = "0.5.1", features = [ "util" ] }
-tower-http  = { version = "0.6.1", features = [ "compression-full", "decompression-full", "fs" ] }
+tower-http  = { version = "0.6.2", features = [ "compression-full", "decompression-full", "fs" ] }
 tera        = { version = "1.20.0" }
 lazy_static = { version = "1.5.0" }
 derive_more = { version = "1.0.0", features = [ "from" ] }
