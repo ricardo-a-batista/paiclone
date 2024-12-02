@@ -14,7 +14,7 @@ lazy_static = { version = "1.5.0" }
 derive_more = { version = "1.0.0", features = [ "from" ] }
 
 tracing            = { version = "0.1.40", features = [ "attributes" ] }
-tracing-subscriber = { version = "0.3.18" }
+tracing-subscriber = { version = "0.3.19" }
 
 
 [dev-dependencies]
